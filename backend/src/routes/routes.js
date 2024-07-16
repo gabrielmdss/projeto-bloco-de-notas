@@ -1,11 +1,11 @@
 const express = require('express');
 const { getAllNotes, getNoteById, createNote, updateNote, deleteNote } = require('../controllers/ApiController');
-
+const { loginUser, registerUser } = require('../controllers/AuthController')
 const routes = express();
 
 
-routes.post('/api/auth/login', )
-routes.post('/api/auth/logout',)
+routes.post('/api/auth/login', loginUser )
+routes.post('/api/register', registerUser)
 
 routes.get('/api/notes', getAllNotes)
 
