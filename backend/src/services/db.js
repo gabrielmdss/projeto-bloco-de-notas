@@ -1,13 +1,13 @@
 const knex = require('knex')({
     client: 'pg',
     connection: {
-        host: process.env.DB_HOST,
-        port: process.env.DB_PORT,
-        user: process.env.DB_USER,
-        password: process.env.DB_PASS,
-        database: process.env.DB_NAME,
-        ssl: { rejectUnauthorized: false },
+      host: 'isabelle.db.elephantsql.com',
+      port: 5432,
+      user: 'gzewbamh',
+      password: '3Q6nl8206I3IFJrmCqIg0j6H1YxBNF7q',
+      database: 'gzewbamh'
     }
-});
-
-module.exports = knex;
+  });
+  
+  module.exports = knex;
+  
